@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser Suite" parallel="tests" thread-count="2">
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="isRemote" value="true"/>
+        <classes>
+            <class name="runners.CrossBrowserRunner"/>
+        </classes>
+    </test>
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="isRemote" value="true"/>
+        <classes>
+            <class name="runners.CrossBrowserRunner"/>
+        </classes>
+    </test>
+
+</suite>
