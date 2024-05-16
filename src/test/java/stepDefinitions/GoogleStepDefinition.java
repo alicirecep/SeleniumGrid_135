@@ -2,8 +2,6 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-
-import manage.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -25,7 +23,7 @@ public class GoogleStepDefinition {
 
 	@Then("Sayfayi kapat")
 	public void sayfayiKapat() {
-		DriverFactory.quitDriver();
+	//	DriverFactory.quitDriver();
 	}
 
 }

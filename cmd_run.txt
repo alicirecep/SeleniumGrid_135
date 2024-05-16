@@ -19,4 +19,4 @@ mvn clean test -Dcucumber.filter.tags="@smoke"
 # Tarayıcı, remote ve tag belirterek test çalıştırma (örneğin, Chrome, remote true, @smoke tag'i ile):
 mvn clean test -Dbrowser=chrome -DisRemote=true -Dcucumber.filter.tags="@smoke"
 
-mvn clean test -Dbrowser=chrome -DisRemote=true -Dcucumber.filter.tags="@test"
+mvn clean test -Dbrowser=chrome -DisRemote=true -Dcucumber.filter.tags="@Test"
